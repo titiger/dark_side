@@ -1,0 +1,210 @@
+<?xml version="1.0" standalone="no"?>
+
+<unit>
+	<parameters>
+		<size value="2"/>
+		<height value="1"/>
+		<max-hp value="1500" regeneration="3"/>
+		<max-ep value="0"/>
+		<armor value="30"/>	
+		<armor-type value="organic"/>
+		<sight value="17"/>
+		<time value="120"/>	
+		<multi-selection value="true"/>	
+		<cellmap value="false"/>
+		<levels>
+			<level name="ancient" kills="10"/>
+		</levels>
+		<fields>
+			<field value="air"/>
+		</fields>	
+		<properties/>
+		<light enabled="false"/>
+		<unit-requirements>
+			<unit name="oblivion_portal"/>
+		</unit-requirements> 
+		<upgrade-requirements>
+			<upgrade name="dark_sorcery"/>
+			<upgrade name="aeromancy"/>
+		</upgrade-requirements>
+		<resource-requirements>
+			<resource name="gold" amount="200"/>
+			<resource name="energy" amount="2"/>				
+		</resource-requirements>
+		<resources-stored/>
+		<image path="images/hellbat.bmp"/>
+		<image-cancel path="../dark_elder/images/dark_magic_cancel.bmp"/>
+		<meeting-point value="false"/>
+		<selection-sounds enabled="true">
+			<sound path="sounds/select1.wav"/>
+			<sound path="sounds/select2.wav"/>
+			<sound path="sounds/select3.wav"/>
+			<sound path="sounds/select4.wav"/>
+		</selection-sounds>
+		<command-sounds enabled="true">
+			<sound path="sounds/ack1.wav"/>
+			<sound path="sounds/ack2.wav"/>
+			<sound path="sounds/ack3.wav"/>
+			<sound path="sounds/ack4.wav"/>
+		</command-sounds>
+	</parameters>
+
+
+	<skills>
+	
+		<skill>
+			<type value="stop"/>
+			<name value="stop_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="1000"/>
+			<anim-speed value="55"/>
+			<animation path="models/bat_flying.g3d"/>
+			<sound enabled="true" start-time="0">
+				<sound-file path="sounds/bat_flap1.wav"/>
+				<sound-file path="sounds/bat_flap2.wav"/>
+				<sound-file path="sounds/bat_flap3.wav"/>
+				<sound-file path="sounds/bat_flap4.wav"/>
+			</sound>			
+		</skill>
+		
+		<skill>
+			<type value="move"/>
+			<name value="move_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="480"/>
+			<anim-speed value="450"/>
+			<animation path="models/bat_flying.g3d"/>
+			<sound enabled="true" start-time="0">
+				<sound-file path="sounds/bat_flap1.wav"/>
+				<sound-file path="sounds/bat_flap2.wav"/>
+				<sound-file path="sounds/bat_flap3.wav"/>
+				<sound-file path="sounds/bat_flap4.wav"/>
+			</sound>			
+		</skill>
+
+		<skill>
+			<type value="attack"/>
+			<name value="talon_attack_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="30"/>
+			<anim-speed value="100"/>
+			<animation path="models/bat_attack.g3d"/>
+			<sound enabled="true" start-time="0">
+				<sound-file path="sounds/attack1.wav"/>
+				<sound-file path="sounds/attack2.wav"/>
+				<sound-file path="sounds/attack3.wav"/>
+				<sound-file path="sounds/attack4.wav"/>
+			</sound>
+			<attack-strenght value="400"/>
+			<attack-var value="30"/>
+			<attack-range value="2"/>
+			<attack-type value="slashing"/>
+			<attack-fields>
+				<field value="air"/>
+			</attack-fields>
+			<attack-start-time value="0.3"/>
+			<projectile value="false"/>
+			<splash value="false"/>
+		</skill>
+		
+		<skill>
+			<type value="attack"/>
+			<name value="wind_attack_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="30"/>
+			<anim-speed value="100"/>
+			<animation path="models/bat_attack.g3d"/>
+			<sound enabled="true" start-time="0">
+				<sound-file path="sounds/attack1.wav"/>
+				<sound-file path="sounds/attack2.wav"/>
+				<sound-file path="sounds/attack3.wav"/>
+				<sound-file path="sounds/attack4.wav"/>
+			</sound>
+			<attack-strenght value="150"/>
+			<attack-var value="30"/>
+			<attack-range value="7"/>
+			<attack-type value="energy"/>
+			<attack-fields>
+				<field value="land"/>
+			</attack-fields>
+			<attack-start-time value="0.1"/>
+			<projectile value="true">
+			<particle value="true" path="particle_proj.xml"/>
+			<sound enabled="false"/>
+			</projectile>
+			<splash value="true">
+				<radius value="1"/>
+				<damage-all value="false"/>
+				<particle value="true" path="particle_splash.xml"/>
+			</splash>
+		</skill>
+	
+		<skill>
+			<type value="die"/>
+			<name value="die_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="120"/>
+			<anim-speed value="70"/>
+			<animation path="models/bat_dying.g3d"/>
+			<sound enabled="true" start-time="0">
+				<sound-file path="sounds/die1.wav"/>
+				<sound-file path="sounds/die2.wav"/>
+				<sound-file path="sounds/die3.wav"/>
+				<sound-file path="sounds/die4.wav"/>
+			</sound>			
+			<fade value="false"/>
+		</skill>
+
+	</skills>
+	
+	<commands>
+		
+		<command>
+			<type value="stop"/>
+			<name value="stop"/>
+			<image path="../dark_elder/images/dark_magic_stop.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<stop-skill value="stop_skill"/>
+		</command>
+
+		<command>
+			<type value="move"/>
+			<name value="move"/>
+			<image path="../dark_elder/images/dark_magic_move.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+		</command>
+
+		<command>
+			<type value="attack"/>
+			<name value="gust"/>
+			<image path="images/wind_attack.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+			<attack-skill value="wind_attack_skill"/>
+		</command>
+		
+    		<command>
+			<type value="attack"/>
+			<name value="talons"/>
+			<image path="images/harpy_claw.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+			<attack-skill value="talon_attack_skill"/>
+		</command>
+
+		<command>
+			<type value="attack_stopped"/>
+			<name value="hold_position"/>
+			<image path="../dark_elder/images/dark_magic_hold.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<stop-skill value="stop_skill"/>
+			<attack-skill value="wind_attack_skill"/>
+		</command>
+	</commands>
+</unit>

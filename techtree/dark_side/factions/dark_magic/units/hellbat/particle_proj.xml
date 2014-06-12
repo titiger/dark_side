@@ -1,0 +1,22 @@
+<?xml version="1.0" standalone="yes"?>
+<projectile-particle-system>
+    	<texture value="true" path="../dark_mage/images/particle.bmp" luminance="true"/>
+    	<model value="true" path="../sorceress/models/bat.g3d"/>
+	<primitive value="quad"/>
+	<offset x="-0.07" y="-0.125" z="0.3"/>
+	<color red="0.0" green="1.0" blue="1.0" alpha="0.8" />
+	<color-no-energy red="1.0" green="1.0" blue="1.0" alpha="0.0" />
+    	<size value="0.25" />
+    	<size-no-energy value="0.05" />
+    	<speed value="0.1" />
+	<gravity value="0"/>
+    	<emission-rate value="3" />
+    	<energy-max value="40" />
+    	<energy-var value="0" />
+	
+	<trajectory type="spiral">
+		<speed value="8.0"/>
+		<scale value="0.2"/>
+		<frequency value="4"/>
+	</trajectory>
+</projectile-particle-system>
