@@ -20,10 +20,9 @@
 		<properties/>
 		<light enabled="false"/>
 		<unit-requirements>
-			<unit name="dark_elder"/>
 		</unit-requirements>
 		<upgrade-requirements>
-			<upgrade name="dark_sorcery"/>
+			<upgrade name="magik"/>
 			<upgrade name="underworld"/>
 		</upgrade-requirements>
 		<resource-requirements>

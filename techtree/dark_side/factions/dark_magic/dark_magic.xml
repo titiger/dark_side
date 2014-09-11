@@ -7,6 +7,7 @@
 		<resource name="stone" amount="400"/>
 		<resource name="energy" amount="15"/>		
 	</starting-resources>
+	<!-- all units
 	<starting-units>
 		<unit name="dark_castle" amount="1"/>
 		<unit name="daemon" amount="1"/>
@@ -31,6 +32,16 @@
 		<unit name="oblivion_portal" amount="1"/>
 		<unit name="sorcery_runes" amount="1"/>
 
-	</starting-units>	
+	</starting-units>
+	-->	
+	<starting-units>
+		<unit name="dark_castle" amount="1"/>
+		<unit name="daemon" amount="1"/>
+		<unit name="dark_mage" amount="1"/>
+		<unit name="acolyte" amount="3"/>
+		<unit name="20_energy" amount="1"/>
+		<unit name="dark_elder" amount="1"/>
+		<unit name="sorceress" amount="1"/>
+	</starting-units>
 	<music value="true" path="music/the_dark_amulet.ogg"/>
 </faction>

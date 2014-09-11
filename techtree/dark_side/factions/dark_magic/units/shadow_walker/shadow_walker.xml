@@ -20,9 +20,10 @@
 		</fields>	
 		<properties/>
 		<light enabled="false"/>
-		<unit-requirements />
+		<unit-requirements>
+			<unit name="hellgate"/>
+		</unit-requirements>
 		<upgrade-requirements>
-			<upgrade name="underworld"/>
 		</upgrade-requirements>
 		<resource-requirements>
 			<resource name="gold" amount="150"/>

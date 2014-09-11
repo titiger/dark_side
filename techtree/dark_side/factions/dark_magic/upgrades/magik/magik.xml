@@ -5,7 +5,9 @@
 	<image-cancel path="../dark_sorcery/images/dark_magic_upgrade_cancel.bmp"/>
 	<time value="200"/>
 	<unit-requirements/>
-	<upgrade-requirements/>
+	<upgrade-requirements>
+		<upgrade name="underworld"/>
+	</upgrade-requirements>
 	<resource-requirements>
 		<resource name="wood" amount="150"/>
 		<resource name="stone" amount="200"/>

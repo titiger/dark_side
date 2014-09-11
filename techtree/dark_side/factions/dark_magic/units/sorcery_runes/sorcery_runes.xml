@@ -129,6 +129,15 @@
 
 		<command>
 			<type value="upgrade"/>
+			<name value="acces_the_underworld" />
+			<image path="../../upgrades/underworld/images/underworld.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<upgrade-skill value="upgrade_skill"/>
+			<produced-upgrade name="underworld"/>
+		</command>
+		<command>
+			<type value="upgrade"/>
 			<name value="research_dark_sorcery" />
 			<image path="../../upgrades/dark_sorcery/images/dark_sorcery.bmp" />
 			<unit-requirements />

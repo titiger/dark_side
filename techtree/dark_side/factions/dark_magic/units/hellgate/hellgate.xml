@@ -27,7 +27,7 @@
 		</damage-particles>
 		<light enabled="false"/>
 		<unit-requirements>
-			<unit name="dark_castle"/>
+			<unit name="oblivion_portal"/>
 		</unit-requirements>
 		<upgrade-requirements />
 		<resource-requirements>
@@ -136,7 +136,7 @@
 			<produced-unit name="shadow_walker"/>
 		</command>
 
-  <command>
+  		<command>
 			<type value="produce"/>
 			<name value="produce_dark_mage"/>
 			<image path="../dark_mage/images/dark_mage.bmp" />
@@ -146,7 +146,27 @@
 			<produced-unit name="dark_mage"/>
 		</command>
 
-		<command>
+  		<command>
+			<type value="produce"/>
+			<name value="produce_shade"/>
+			<image path="../shade/images/alliyp.bmp" />
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="shade"/>
+		</command>
+
+  		<command>
+			<type value="produce"/>
+			<name value="produce_imp"/>
+			<image path="../imp/images/imp.bmp" />
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="imp"/>
+		</command>
+
+		<!--command>
 			<type value="upgrade"/>
 			<name value="research_dark_sorcery" />
 			<image path="../../upgrades/dark_sorcery/images/dark_sorcery.bmp" />
@@ -154,6 +174,6 @@
 			<upgrade-requirements />
 			<upgrade-skill value="upgrade_skill"/>
 			<produced-upgrade name="dark_sorcery"/>
-		</command>
+		</command-->
 	</commands>
 </unit>
