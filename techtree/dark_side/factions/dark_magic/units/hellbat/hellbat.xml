@@ -21,11 +21,10 @@
 		<properties/>
 		<light enabled="false"/>
 		<unit-requirements>
-			<unit name="oblivion_portal"/>
+			<unit name="poisen_morel"/>
 		</unit-requirements> 
 		<upgrade-requirements>
-			<upgrade name="dark_sorcery"/>
-			<upgrade name="aeromancy"/>
+			<upgrade name="magik"/>
 		</upgrade-requirements>
 		<resource-requirements>
 			<resource name="gold" amount="200"/>

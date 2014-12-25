@@ -5,7 +5,7 @@
 	<parameters>
 		<size value="2"/>
 		<height value="2"/>
-		<max-hp value="1800" regeneration="4"/>
+		<max-hp value="4200" regeneration="4"/>
 		<max-ep value="0" regeneration="0"/>
 		<max-unit-count value="4"/>
 		<armor value="45"/>	
@@ -30,7 +30,7 @@
 			<upgrade name="magik"/>
 		</upgrade-requirements>
 		<resource-requirements>
-			<resource name="gold" amount="300"/>
+			<resource name="gold" amount="200"/>
 			<resource name="wood" amount="100"/>
 			<resource name="energy" amount="2"/>				
 		</resource-requirements>
@@ -102,7 +102,7 @@
 			<sound enabled="false"/>
 			<attack-boost>
 				<allow-multiple-boosts value="true" />
-				<radius value="15"/>
+				<radius value="12"/>
 				<target value="faction">
 					<unit-type name="shadow_walker" />
 				</target>
@@ -150,7 +150,7 @@
 			<splash value="false"/>
 			<attack-boost>
 				<allow-multiple-boosts value="true" />
-				<radius value="15"/>
+				<radius value="12"/>
 				<target value="faction">
 					<unit-type name="shadow_walker" />
 				</target>

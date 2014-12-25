@@ -31,7 +31,7 @@
 		</resources-stored>
 		<image path="images/energy_fountain.bmp"/>
 		<image-cancel path="../dark_elder/images/dark_magic_cancel.bmp"/>
-		<meeting-point value="false"/>
+		<meeting-point value="true" image-path="../dark_castle/images/meeting_point.bmp"/>
 		<selection-sounds enabled="true">
 			<sound path="../poisen_morel/sounds/dark_magic_click.wav"/>
 		</selection-sounds>
@@ -98,22 +98,22 @@
 	<commands>
 		<command>
 			<type value="produce"/>
-			<name value="produce_10_energy" />
-			<image path="../10_energy/images/10_energy.bmp"/>
+			<name value="produce_8_energy" />
+			<image path="../8_energy/images/8_energy.bmp"/>
 			<unit-requirements />
 			<upgrade-requirements />
 			<produce-skill value="produce_skill"/>
-			<produced-unit name="10_energy"/>
+			<produced-unit name="8_energy"/>
 		</command>
 
 		<command>
 			<type value="produce"/>
-			<name value="produce_20_energy" />
-			<image path="../20_energy/images/20_energy.bmp"/>
+			<name value="produce_15_energy" />
+			<image path="../15_energy/images/15_energy.bmp"/>
 			<unit-requirements />
 			<upgrade-requirements />
 			<produce-skill value="produce_skill"/>
-			<produced-unit name="20_energy"/>
+			<produced-unit name="15_energy"/>
 		</command>
 	</commands>
 </unit>

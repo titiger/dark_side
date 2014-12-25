@@ -54,8 +54,8 @@
 			<name value="stop_skill"/>		
 			<ep-cost value="0"/>
 			<speed value="1000"/>
-			<anim-speed value="40"/>
-			<animation path="models/daemon_standing.g3d"/>
+			<anim-speed value="28"/>
+			<animation path="models/untitled.g3d"/>
 			<sound enabled="false"/>
 		</skill>
 		
@@ -64,8 +64,8 @@
 			<name value="move_skill"/>		
 			<ep-cost value="0"/>
 			<speed value="250"/>
-			<anim-speed value="150"/>
-			<animation path="models/daemon_walking.g3d"/>
+			<anim-speed value="100"/>
+			<animation path="models/untitled_move.g3d"/>
 			<sound enabled="false"/>
 		</skill>
 
@@ -74,8 +74,8 @@
 			<name value="attack_skill"/>		
 			<ep-cost value="0"/>
 			<speed value="100"/>
-			<anim-speed value="100"/>
-			<animation path="models/daemon_attacking.g3d"/>
+			<anim-speed value="55"/>
+			<animation path="models/untitled_attack.g3d"/>
 			<sound enabled="true" start-time="0.5">
 				<sound-file path="sounds/daemon_attack1.wav"/>
 				<sound-file path="sounds/daemon_attack2.wav"/>
@@ -94,8 +94,11 @@
 				<sound-file path="sounds/daemon_attack15.wav"/>
 				<sound-file path="sounds/daemon_attack16.wav"/>	
 			</sound> 
-			<attack-strenght value="90"/>
-			<attack-var value="40"/>
+			<particles value="true" start-time="0.3" end-time="0.7">
+		 		<particle-file path="particles.xml"/>
+			</particles>
+			<attack-strenght value="1"/>
+			<attack-var value="0"/>
 			<attack-range value="1"/>
 			<attack-type value="slashing"/>
 			<attack-fields>
@@ -110,16 +113,16 @@
 			<type value="die"/>
 			<name value="die_skill"/>		
 			<ep-cost value="0"/>
-			<speed value="120"/>
-			<anim-speed value="80"/>
-			<animation path="models/daemon_dying.g3d"/>
+			<speed value="70"/>
+			<anim-speed value="40"/>
+			<animation path="models/untitled_die.g3d"/>
 			<sound enabled="true" start-time="0">
 				<sound-file path="sounds/daemon_die1.wav"/>
 				<sound-file path="sounds/daemon_die2.wav"/>
 				<sound-file path="sounds/daemon_die3.wav"/>
 				<sound-file path="sounds/daemon_die4.wav"/>
 			</sound>			
-			<fade value="false"/>
+			<fade value="true"/>
 		</skill>
 	</skills>
 	

@@ -5,7 +5,7 @@
 		<size value="1"/>
 		<height value="2"/>
 		<max-hp value="700" regeneration="3"/>
-		<max-ep value="500" regeneration="15"/>
+		<max-ep value="300" regeneration="5"/>
 		<armor value="30"/>	
 		<armor-type value="leather"/>
 		<sight value="12"/>
@@ -24,7 +24,8 @@
 		<unit-requirements/>
 		<upgrade-requirements/>
 		<resource-requirements>
-			<resource name="gold" amount="75"/>
+			<resource name="gold" amount="90"/>
+			<resource name="wood" amount="60"/>
 			<resource name="energy" amount="1"/>				
 		</resource-requirements>
 		<resources-stored/>
@@ -80,7 +81,7 @@
 		<skill>
 			<type value="attack"/>
 			<name value="attack_skill"/>		
-			<ep-cost value="40"/>
+			<ep-cost value="10"/>
 			<speed value="60"/>
 			<anim-speed value="60"/>
 			<animation path="models/dragon_attack.g3d"/>

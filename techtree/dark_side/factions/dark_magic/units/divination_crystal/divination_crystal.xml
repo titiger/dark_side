@@ -21,7 +21,7 @@
 		</unit-requirements>
 		<upgrade-requirements />
 		<resource-requirements>
-			<resource name="gold" amount="150" />
+			<resource name="gold" amount="200" />
 			<resource name="stone" amount="50" />
 			<resource name="wood" amount="150" />
 		</resource-requirements>
@@ -82,27 +82,8 @@
 		</skill>
 	</skills>
 
-	<commands>
-		<command>
-			<type value="upgrade"/>
-			<name value="research_underworld"/>
-			<image path="../../upgrades/underworld/images/hellfire.bmp" />
-			<unit-requirements/>
-			<upgrade-requirements/>
-			<upgrade-skill value="upgrade_skill"/>
-			<produced-upgrade name="underworld"/>
-		</command>
-    		<command>
-			<type value="upgrade"/>
-			<name value="worms"/>
-			<image path="../../upgrades/worms/images/worms.bmp" />
-			<unit-requirements/>
-			<upgrade-requirements/>
-			<upgrade-skill value="upgrade_skill"/>
-			<produced-upgrade name="worms"/>
-		</command>
-    
-    <command>
+	<commands>    
+   		 <command>
 			<type value="upgrade"/>
 			<name value="research_magik"/>
 			<image path="../../upgrades/magik/images/magik.bmp" />

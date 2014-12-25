@@ -23,12 +23,15 @@
 		<properties/>
 		<light enabled="false"/>
 		<unit-requirements>
-			<unit name="poisen_morel"/>
-		</unit-requirements> 
+			<unit name="divination_crystal"/>
+			<unit name="oblivion_portal"/>
+		</unit-requirements>
 		<upgrade-requirements>
+			<upgrade name="magik"/>
 		</upgrade-requirements>
 		<resource-requirements>
 			<resource name="gold" amount="200"/>
+			<resource name="wood" amount="100"/>
 			<resource name="energy" amount="2"/>
 		</resource-requirements>
 		<resources-stored/>
@@ -75,7 +78,7 @@
 			<name value="move_skill"/>
 			<ep-cost value="0"/>
 			<speed value="180"/>
-			<anim-speed value="180"/>
+			<anim-speed value="140"/>
 			<animation path="models/elder_walking.g3d"/>
 			<sound enabled="false"/>
 		</skill>
@@ -87,7 +90,7 @@
 			<speed value="75"/>
 			<anim-speed value="75"/>
 			<animation path="models/elder_attacking.g3d"/>
-			<sound enabled="true" start-time="0.3">
+			<sound enabled="true" start-time="0.45">
 				<sound-file path="sounds/touch1.wav"/>
 				<sound-file path="sounds/touch2.wav"/>
 				<sound-file path="sounds/touch3.wav"/>

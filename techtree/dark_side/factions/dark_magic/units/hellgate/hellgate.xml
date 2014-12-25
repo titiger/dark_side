@@ -31,8 +31,9 @@
 		</unit-requirements>
 		<upgrade-requirements />
 		<resource-requirements>
-			<resource name="gold" amount="150"/>
+			<resource name="gold" amount="200"/>
 			<resource name="stone" amount="150"/>
+			<resource name="wood" amount="50"/>
 		</resource-requirements>
 		<resources-stored>
 		</resources-stored>
@@ -129,7 +130,7 @@
 		<command>
 			<type value="produce"/>
 			<name value="produce_shadow_walker"/>
-			<image path="../sorceress/images/sorceress.bmp" />
+			<image path="../shadow_walker/images/shadow_walker.bmp" />
 			<unit-requirements/>
 			<upgrade-requirements/>
 			<produce-skill value="produce_skill"/>

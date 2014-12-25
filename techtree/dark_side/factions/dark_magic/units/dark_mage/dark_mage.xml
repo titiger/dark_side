@@ -5,7 +5,7 @@
 		<size value="1"/>
 		<height value="2"/>
 		<max-hp value="600" regeneration="5"/>
-		<max-ep value="800" regeneration="20"/>
+		<max-ep value="800" regeneration="15"/>
 		<armor value="25"/>	
 		<armor-type value="leather"/>
 		<sight value="11"/>
@@ -25,7 +25,7 @@
 		<unit-requirements/>
 		<upgrade-requirements/>
 		<resource-requirements>
-			<resource name="gold" amount="85"/>
+			<resource name="gold" amount="125"/>
 			<resource name="energy" amount="1"/>
 		</resource-requirements>
 		<resources-stored/>
@@ -95,6 +95,9 @@
 			<animation path="models/dark_mage_death.g3d"/>
 			<sound enabled="false"/>
 			<fade value="false"/>
+			<particles value="true">
+				<particle-file path="die_particles.xml"/>
+			</particles>
 		</skill>
 	</skills>
 

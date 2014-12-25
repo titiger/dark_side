@@ -170,6 +170,10 @@
 			<anim-speed value="80"/>
 			<animation path="models/acolyte_morphing.g3d"/>
 			<sound enabled="false"/>
+			<particles value="true">
+				<particle-file path="morph_particles.xml"/>
+				<particle-file path="smoke_particles1.xml"/>
+			</particles>
 		</skill>
 
 		<skill>
@@ -254,7 +258,6 @@
 				<building name="oblivion_portal"/>
 				<building name="divination_crystal"/>
 				<building name="poisen_morel"/>
-				<building name="earth_serpent"/>
 			</buildings>
 			<start-sound enabled="false"/>
 			<built-sound enabled="false"/>
@@ -279,5 +282,16 @@
 				<unit name="earth_serpent"/>
 			</repaired-units>		
 		</command>
+
+		<command>
+			<type value="morph"/>
+			<name value="promote_to_dark_elder"/>
+			<image path="../dark_elder/images/dark_elder.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<morph-skill value="morph_skill"/>
+			<morph-unit name= "dark_elder"/>
+			<discount value="0"/>
+		</command>	
 	</commands>
 </unit>

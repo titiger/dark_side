@@ -39,9 +39,10 @@
 		<unit name="daemon" amount="1"/>
 		<unit name="dark_mage" amount="1"/>
 		<unit name="acolyte" amount="3"/>
-		<unit name="20_energy" amount="1"/>
+		<unit name="8_energy" amount="2"/>
 		<unit name="dark_elder" amount="1"/>
 		<unit name="sorceress" amount="1"/>
+		<unit name="earth_serpent" amount="3"/>
 	</starting-units>
 	<music value="true" path="music/the_dark_amulet.ogg"/>
 </faction>

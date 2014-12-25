@@ -1,0 +1,23 @@
+<?xml version="1.0" standalone="yes"?>
+<unit-particle-system>
+        <texture value="true" path="../dark_mage/images/particle.bmp" luminance="true"/>
+    <mode value="black"/>
+    <primitive value="quad"/>
+    <offset x="0" y="-1" z="0"/>
+    <direction x="0" y="-1" z="0"/>
+    <color red="0.5" green="0.0" blue="1.0" alpha="0.4" />
+    <color-no-energy red="0" green="0" blue="0" alpha="0.1" />
+        <radius value="0.01" />
+        <size value="0.2" />
+        <size-no-energy value="0.6" />
+        <speed value="0" />
+    <gravity value="0"/>
+        <emission-rate value="4" />
+        <energy-max value="40" />
+        <energy-var value="0" />
+        <fixed value="false" />
+        <relative value="true" />
+        <teamcolorNoEnergy value="false" />
+        <teamcolorEnergy value="false" />
+	<meshName value="Plane.001"/>
+</unit-particle-system>

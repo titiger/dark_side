@@ -24,10 +24,13 @@
 			<unit name="divination_crystal"/>
 			<unit name="oblivion_portal"/>
 		</unit-requirements>
-		<upgrade-requirements />
+		<upgrade-requirements>
+			<upgrade name="magik"/>
+		</upgrade-requirements>
 		<resource-requirements>
-			<resource name="stone" amount="300" />
+			<resource name="gold" amount="300" />
 			<resource name="wood" amount="200" />
+			<resource name="stone" amount="70" />
 		</resource-requirements>
 		<resources-stored>
 			<resource name="wood" amount="250"/>
