@@ -6,7 +6,7 @@
 		<size value="1"/>
 		<height value="2"/>
 		<max-hp value="700" regeneration="7"/>
-		<max-ep value="700" regeneration="20"/>
+		<max-ep value="1000" regeneration="20"/>
 		<armor value="0"/>
 		<armor-type value="leather"/>					
 		<sight value="14"/>
@@ -100,7 +100,7 @@
 			<attack-strenght value="200"/>
 			<attack-var value="50"/>
 			<attack-range value="10"/>
-			<attack-type value="energy"/>
+			<attack-type value="impact"/>
 			<attack-fields>
 				<field value="land"/>
 				<field value="air"/>

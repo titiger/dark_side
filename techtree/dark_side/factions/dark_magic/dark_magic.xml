@@ -5,7 +5,7 @@
 		<resource name="gold" amount="500"/>
 		<resource name="wood" amount="300"/>	
 		<resource name="stone" amount="400"/>
-		<resource name="energy" amount="15"/>		
+		<resource name="energy" amount="0"/>		
 	</starting-resources>
 	<!-- all units
 	<starting-units>
@@ -42,7 +42,7 @@
 		<unit name="8_energy" amount="2"/>
 		<unit name="dark_elder" amount="1"/>
 		<unit name="sorceress" amount="1"/>
-		<unit name="earth_serpent" amount="3"/>
+		<unit name="earth_serpent" amount="1"/>
 	</starting-units>
 	<music value="true" path="music/the_dark_amulet.ogg"/>
 </faction>

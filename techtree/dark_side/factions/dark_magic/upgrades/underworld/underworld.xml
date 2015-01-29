@@ -17,7 +17,7 @@
     		<unit name="earth_serpent"/>
 	</effects>
 	<max-hp value="50"/>
-	<max-ep value="100"/>
+	<max-ep value="0"/>
 	<sight value="1"/>
 	<attack-strenght value="25"/>
 	<attack-range value="0"/>
