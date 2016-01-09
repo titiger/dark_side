@@ -119,7 +119,7 @@
 
 		<command>
 			<type value="upgrade"/>
-			<name value="acces_the_underworld" />
+			<name value="access_the_underworld" />
 			<image path="../../upgrades/underworld/images/underworld.bmp" />
 			<unit-requirements />
 			<upgrade-requirements />

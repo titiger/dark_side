@@ -6,11 +6,11 @@
 		<size value="1"/>
 		<height value="2"/>
 		<max-hp value="700" regeneration="7"/>
-		<max-ep value="1000" regeneration="20"/>
+		<max-ep value="1200" regeneration="20"/>
 		<armor value="0"/>
 		<armor-type value="leather"/>					
 		<sight value="14"/>
-		<time value="100"/>	
+		<time value="90"/>	
 		<multi-selection value="true"/>	
 		<cellmap value="false"/>
 		<levels/>
@@ -97,19 +97,37 @@
 				<sound-file path="sounds/shade15.wav"/>
 				<sound-file path="sounds/shade4.wav"/>
 			</sound>
-			<attack-strenght value="200"/>
+			<attack-strenght value="120"/>
 			<attack-var value="50"/>
 			<attack-range value="10"/>
-			<attack-type value="impact"/>
+			<attack-type value="magic"/>
 			<attack-fields>
 				<field value="land"/>
 				<field value="air"/>
 			</attack-fields>
-			<attack-start-time value="0.45"/>
-			<projectile value="true">
-				<particle value="true" path="particle_proj.xml"/>
-				<sound enabled="false"/>
-			</projectile>
+			<attack-start-time value="0"/>
+			<projectiles>
+				<projectile attack-start-time="0.45" damage-percentage="100">
+					<particle path="particle_proj.xml"/>
+					<hitsound enabled="false">
+						<sound-file path="/sounds/firearrowhit1.wav"/>
+						<sound-file path="/sounds/firearrowhit2.wav"/>
+						<sound-file path="/sounds/firearrowhit3.wav"/>
+						<sound-file path="/sounds/firearrowhit4.wav"/>
+					</hitsound>
+					<!--hitshake enabled="true" intensity="1000" duration="40" visible="true" in-camera-view="false" camera-distance-affected="false"/-->
+				</projectile>
+				<projectile attack-start-time="0.45" damage-percentage="0">
+					<particle path="particle_ball.xml"/>
+					<hitsound enabled="false">
+						<sound-file path="/sounds/firearrowhit1.wav"/>
+						<sound-file path="/sounds/firearrowhit2.wav"/>
+						<sound-file path="/sounds/firearrowhit3.wav"/>
+						<sound-file path="/sounds/firearrowhit4.wav"/>
+					</hitsound>
+					<!--hitshake enabled="true" intensity="1000" duration="40" visible="true" in-camera-view="false" camera-distance-affected="false"/-->
+				</projectile>
+			</projectiles>
 			<splash value="true">
 				<radius value="1"/>
 				<damage-all value="true"/>

@@ -139,7 +139,7 @@
 			<type value="harvest"/>
 			<name value="mine_skill"/>		
 			<ep-cost value="0"/>
-			<speed value="200"/>
+			<speed value="330"/>
 			<anim-speed value="80"/>
 			<animation path="models/acolyte_mining.g3d"/>
 			<sound enabled="true" start-time="0">
