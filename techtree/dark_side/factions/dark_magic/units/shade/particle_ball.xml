@@ -20,4 +20,4 @@
 		<scale value="0.4"/>
 		<frequency value="2"/>
 	</trajectory>
-</projectile-particle-system>
+</unit-particle-system>
