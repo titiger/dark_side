@@ -6,13 +6,14 @@
 		<max-hp value="6000" regeneration="0"/>
 		<max-ep value="0"/>
 		<armor value="5"/>
-		<armor-type value="stone"/>		
+		<armor-type value="stone"/>
 		<sight value="14" />
 		<time value="110" />
-		<multi-selection value="false"/>
+		<multi-selection value="true"/>
+		<uniform-selection value="true"/>
 		<cellmap value="true">
-			<row value="111"/> 
-			<row value="100"/> 
+			<row value="111"/>
+			<row value="100"/>
 			<row value="101"/>
 		</cellmap>
 		<levels/>
@@ -47,10 +48,10 @@
 			<sound path="../poisen_morel/sounds/dark_magic_click.wav"/>
 		</command-sounds>
 	</parameters>
-	
+
 	<skills>
 		<skill>
-			<name value="be_built_skill"/>		
+			<name value="be_built_skill"/>
 			<ep-cost value="0" />
 			<speed value="300" />
 			<anim-speed value="22" />
@@ -63,10 +64,10 @@
 			<sound enabled="false" />
 			<type value="be_built" />
 		</skill>
-		
+
 		<skill>
 			<type value="stop"/>
-			<name value="stop_skill"/>		
+			<name value="stop_skill"/>
 			<ep-cost value="0"/>
 			<speed value="300"/>
 			<anim-speed value="22" />
@@ -76,11 +77,11 @@
 			</particles>
 
 			<sound enabled="false" />
-		</skill>	
-		
+		</skill>
+
 		<skill>
 			<type value="upgrade" />
-			<name value="upgrade_skill"/>		
+			<name value="upgrade_skill"/>
 			<ep-cost value="0" />
 			<speed value="300" />
 			<anim-speed value="10" />
@@ -90,7 +91,7 @@
 
 		<skill>
 			<type value="produce" />
-			<name value="produce_skill"/>		
+			<name value="produce_skill"/>
 			<ep-cost value="0" />
 			<speed value="300" />
 			<anim-progress-bound value="true" />
@@ -111,17 +112,17 @@
 			</particles>
 			<sound enabled="false" />
 		</skill>
-		
+
 		<skill>
 			<type value="die" />
-			<name value="die_skill"/>		
+			<name value="die_skill"/>
 			<ep-cost value="0" />
 			<speed value="300" />
 			<anim-speed value="85" />
 			<animation path="models/hellgate_destroyed.g3d" />
 			<sound enabled="true" start-time="0">
 				<sound-file path="../poisen_morel/sounds/dark_magic_building_fall5.wav"/>
-			</sound>			
+			</sound>
 			<fade value="false"/>
 		</skill>
 	</skills>

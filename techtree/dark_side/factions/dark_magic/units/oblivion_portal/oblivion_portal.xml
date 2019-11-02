@@ -9,7 +9,8 @@
 		<armor-type value="stone"/>
 		<sight value="6" />
 		<time value="100" />
-		<multi-selection value="false" />
+		<multi-selection value="true"/>
+		<uniform-selection value="true"/>
 		<cellmap value="false"/>
 		<levels/>
 		<fields>
@@ -20,7 +21,7 @@
 		</properties>
 		<light enabled="false" />
 		<unit-requirements>
-		</unit-requirements> 
+		</unit-requirements>
 		<upgrade-requirements />
 		<resource-requirements>
 			<resource name="gold" amount="100" />
@@ -36,10 +37,10 @@
 		</selection-sounds>
 		<command-sounds enabled="false"/>
 	</parameters>
-	
+
 	<skills>
 		<skill>
-			<type value="stop"/>	
+			<type value="stop"/>
 			<name value="stop_skill"/>
 			<ep-cost value="0" />
 			<speed value="50" />
@@ -47,20 +48,20 @@
 			<animation path="models/portal.g3d" />
 			<sound enabled="false" />
 		</skill>
-		
+
 		<skill>
-			<type value="be_built" />	
-			<name value="be_built_skill"/>		
+			<type value="be_built" />
+			<name value="be_built_skill"/>
 			<ep-cost value="0" />
 			<speed value="300" />
 			<anim-speed value="300" />
 			<animation path="models/portal_construction.g3d" />
 			<sound enabled="false" />
 		</skill>
-		
+
 		<skill>
 			<type value="produce"/>
-			<name value="produce_skill"/>	
+			<name value="produce_skill"/>
 			<ep-cost value="0" />
 			<speed value="300" />
 			<anim-speed value="300" />
@@ -69,22 +70,22 @@
 				<particle-file path="produce_particles.xml"/>
 			</particles>
 			<sound enabled="false" />
-		</skill>	
-		
+		</skill>
+
 		<skill>
-			<type value="die" />	
-			<name value="die_skill"/>		
+			<type value="die" />
+			<name value="die_skill"/>
 			<ep-cost value="0" />
 			<speed value="300" />
 			<anim-speed value="300" />
 			<animation path="models/portal_destruction.g3d" />
 			<sound enabled="true" start-time="0">
 				<sound-file path="../poisen_morel/sounds/dark_magic_building_fall6.wav"/>
-			</sound>			
+			</sound>
 			<fade value="false"/>
 		</skill>
 	</skills>
-	
+
 	<commands>
 		<command>
 			<type value="produce"/>
@@ -95,7 +96,7 @@
 			<produce-skill value="produce_skill"/>
 			<produced-unit name="dark_mage"/>
 		</command>
-		
+
 		<command>
 			<type value="produce"/>
 			<name value="teleport_dragon" />
