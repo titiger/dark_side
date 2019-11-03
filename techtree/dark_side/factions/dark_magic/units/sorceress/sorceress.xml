@@ -87,10 +87,8 @@
 			<speed value="60"/>
 			<anim-speed value="60"/>
 			<animation path="models/attacking.g3d"/>
-			<sound enabled="true" start-time="1.4">
-				<sound-file path="sounds/witch_attack1.wav"/>
-				<sound-file path="sounds/witch_attack2.wav"/>
-				<sound-file path="sounds/witch_attack3.wav"/>
+			<sound enabled="true" start-time="0.6">
+				<sound-file path="sounds/crazy-bat.wav"/>
 			</sound>
 			<attack-strenght value="180"/>
 			<attack-var value="50"/>

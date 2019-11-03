@@ -64,7 +64,10 @@
 			<speed value="60"/>
 			<anim-speed value="60"/>
 			<animation path="models/dark_mage_attacking.g3d"/>
-			<sound enabled="false"/>
+			<sound enabled="true" start-time="0.3">
+				<sound-file path="sounds/shot.wav"/>
+			</sound>
+
 			<attack-strenght value="95"/>
 			<attack-var value="45"/>
 			<attack-range value="8"/>
