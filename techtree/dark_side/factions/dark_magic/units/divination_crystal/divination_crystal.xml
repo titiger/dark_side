@@ -6,10 +6,11 @@
 		<max-hp value="6000" regeneration="0"/>
 		<max-ep value="0" />
 		<armor value="0" />
-		<armor-type value="stone"/>		
+		<armor-type value="stone"/>
 		<sight value="11" />
 		<time value="120" />
-		<multi-selection value="false" />
+		<multi-selection value="true"/>
+		<uniform-selection value="true"/>
 		<cellmap value="false"/>
 		<levels/>
 		<fields>
@@ -36,10 +37,10 @@
 			<sound path="../poisen_morel/sounds/dark_magic_click.wav" />
 		</command-sounds>
 	</parameters>
-	
+
 	<skills>
 		<skill>
-			<name value="be_built_skill"/>		
+			<name value="be_built_skill"/>
 			<ep-cost value="0" />
 			<speed value="300" />
 			<anim-speed value="10" />
@@ -47,42 +48,42 @@
 			<sound enabled="false" />
 			<type value="be_built" />
 		</skill>
-		
+
 		<skill>
 			<type value="stop" />
-			<name value="stop_skill"/>		
+			<name value="stop_skill"/>
 			<ep-cost value="0" />
 			<speed value="300" />
 			<anim-speed value="50" />
 			<animation path="models/divination_crystal_idle.g3d" />
 			<sound enabled="false" />
-		</skill>	
-		
+		</skill>
+
 		<skill>
 			<type value="upgrade" />
-			<name value="upgrade_skill"/>		
+			<name value="upgrade_skill"/>
 			<ep-cost value="0" />
 			<speed value="300" />
 			<anim-speed value="75" />
 			<animation path="models/divination_crystal_working.g3d" />
 			<sound enabled="false"/>
 		</skill>
-		
+
 		<skill>
 			<type value="die" />
-			<name value="die_skill"/>		
+			<name value="die_skill"/>
 			<ep-cost value="0" />
 			<speed value="300" />
 			<anim-speed value="300" />
 			<animation path="models/divination_crystal_idle.g3d" />
 			<sound enabled="true" start-time="0">
 				<sound-file path="../poisen_morel/sounds/dark_magic_building_fall3.wav"/>
-			</sound>			
+			</sound>
 			<fade value="false"/>
 		</skill>
 	</skills>
 
-	<commands>    
+	<commands>
    		 <command>
 			<type value="upgrade"/>
 			<name value="research_magik"/>
