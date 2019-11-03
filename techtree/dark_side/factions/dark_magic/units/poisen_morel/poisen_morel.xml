@@ -10,7 +10,8 @@
 		<armor-type value="organic"/>
 		<sight value="16" />
 		<time value="250" />
-		<multi-selection value="false" />
+		<multi-selection value="true"/>
+		<uniform-selection value="true"/>
 		<cellmap value="false"/>
 		<levels/>
 		<fields>
@@ -58,7 +59,7 @@
 			<animation path="models/pain_tower_construction.g3d" />
 			<sound enabled="false"/>
 		</skill>
-		
+
 		<skill>
 			<type value="stop"/>
 			<name value="stop_skill"/>
@@ -84,10 +85,10 @@
 			</particles>
 			<sound enabled="false"/>
 		</skill>
-		
+
 		<skill>
 			<type value="attack"/>
-			<name value="attack_air_skill"/>		
+			<name value="attack_air_skill"/>
 			<ep-cost value="0"/>
 			<speed value="80"/>
 			<anim-speed value="150"/>
@@ -124,20 +125,20 @@
 
 		<skill>
 			<type value="die"/>
-			<name value="die_skill"/>	
+			<name value="die_skill"/>
 			<ep-cost value="0"/>
 			<speed value="15"/>
 			<anim-speed value="15"/>
 			<animation path="models/pain_tower_destruction.g3d"/>
 			<sound enabled="true" start-time="0">
 				<sound-file path="sounds/dark_magic_building_fall6.wav"/>
-			</sound>			
+			</sound>
 			<fade value="true"/>
 		</skill>
 
 		<skill>
 			<type value="produce"/>
-			<name value="conjure_skill"/>		
+			<name value="conjure_skill"/>
 			<ep-cost value="0"/>
 			<speed value="150"/>
 			<anim-speed value="200"/>
