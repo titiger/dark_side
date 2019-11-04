@@ -6,11 +6,11 @@
 		<height value="1"/>
 		<max-hp value="950" regeneration="4"/>
 		<max-ep value="0" regeneration="0"/>
-		<armor value="20"/>	
+		<armor value="20"/>
 		<armor-type value="leather"/>
 		<sight value="14"/>
-		<time value="200"/>	
-		<multi-selection value="true"/>	
+		<time value="200"/>
+		<multi-selection value="true"/>
 		<cellmap value="false"/>
 		<levels>
 			<level name="wise" kills="5"/>
@@ -19,11 +19,11 @@
 		</levels>
 		<fields>
 			<field value="land"/>
-		</fields>	
+		</fields>
 		<properties/>
 		<light enabled="false"/>
 		<unit-requirements>
-			<unit name="divination_crystal"/>
+			<unit name="sorcery_runes"/>
 			<unit name="oblivion_portal"/>
 		</unit-requirements>
 		<upgrade-requirements>
@@ -62,7 +62,7 @@
 			<animation path="models/elder_standing.g3d"/>
 			<sound enabled="false"/>
 		</skill>
-		
+
     <skill>
 			<type value="move"/>
 			<name value="charge_skill"/>
@@ -72,7 +72,7 @@
 			<animation path="models/elder_charging.g3d"/>
 			<sound enabled="false"/>
 		</skill>
-    		
+
 		<skill>
 			<type value="move"/>
 			<name value="move_skill"/>
@@ -85,7 +85,7 @@
 
 		<skill>
 			<type value="attack"/>
-			<name value="attack_skill"/>		
+			<name value="attack_skill"/>
 			<ep-cost value="0"/>
 			<speed value="75"/>
 			<anim-speed value="75"/>
@@ -107,10 +107,10 @@
 			<projectile value="false"/>
 			<splash value="false"/>
 		</skill>
-		
+
     <skill>
 			<type value="attack"/>
-			<name value="attack_air_skill"/>		
+			<name value="attack_air_skill"/>
 			<ep-cost value="0"/>
 			<speed value="75"/>
 			<anim-speed value="75"/>
@@ -142,7 +142,7 @@
 
 		<skill>
 			<type value="die"/>
-			<name value="die_skill"/>	
+			<name value="die_skill"/>
 			<ep-cost value="0"/>
 			<speed value="120"/>
 			<anim-speed value="120"/>
@@ -153,13 +153,13 @@
 				<sound-file path="sounds/die3.wav"/>
 				<sound-file path="sounds/die4.wav"/>
 				<sound-file path="sounds/die5.wav"/>
-			</sound>			
+			</sound>
 			<fade value="true"/>
 		</skill>
 
 		<skill>
 			<type value="build"/>
-			<name value="build_skill"/>		
+			<name value="build_skill"/>
 			<ep-cost value="0"/>
 			<speed value="150"/>
 			<anim-speed value="20"/>
@@ -168,7 +168,7 @@
 		</skill>
 
 	</skills>
-	
+
 	<commands>
 		<command>
 			<type value="stop"/>
@@ -197,7 +197,7 @@
 			<move-skill value="charge_skill"/>
 			<attack-skill value="attack_skill"/>
 		</command>
-		
+
 		<command>
 			<type value="attack"/>
 			<name value="attack_air"/>
@@ -222,7 +222,7 @@
 			<start-sound enabled="false"/>
 			<built-sound enabled="false"/>
 		</command>
-		
+
 		<command>
 			<type value="attack_stopped"/>
 			<name value="hold_position"/>
@@ -231,7 +231,7 @@
 			<upgrade-requirements/>
 			<stop-skill value="stop_skill"/>
 			<attack-skill value="attack_skill"/>
-		</command>			
-		
+		</command>
+
 	</commands>
 </unit>
