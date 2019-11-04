@@ -252,9 +252,9 @@
 			<build-skill value="build_skill"/>
 			<buildings>
 				<building name="blood_fountain"/>
+				<building name="oblivion_portal"/>
 				<building name="sorcery_runes"/>
 				<building name="hellgate"/>
-				<building name="oblivion_portal"/>
 				<building name="divination_crystal"/>
 				<building name="poisen_morel"/>
 				<building name="dark_castle"/>
