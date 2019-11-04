@@ -167,6 +167,16 @@
 			<sound enabled="false"/>
 		</skill>
 
+		<skill>
+			<type value="repair"/>
+			<name value="repair_skill"/>
+			<ep-cost value="0"/>
+			<speed value="75"/>
+			<anim-speed value="150"/>
+			<animation path="models/elder_producing.g3d"/>
+			<sound enabled="false"/>
+		</skill>
+
 	</skills>
 
 	<commands>
@@ -213,7 +223,10 @@
 			<name value="build"/>
 			<image path="images/build.bmp"/>
 			<unit-requirements/>
-			<upgrade-requirements/>
+			<upgrade-requirements>
+				<upgrade name="underworld"/>
+				<upgrade name="magik"/>
+			</upgrade-requirements>
 			<move-skill value="move_skill"/>
 			<build-skill value="build_skill"/>
 			<buildings>
@@ -221,6 +234,19 @@
 			</buildings>
 			<start-sound enabled="false"/>
 			<built-sound enabled="false"/>
+		</command>
+
+		<command>
+			<type value="repair"/>
+			<name value="heal"/>
+			<image path="../acolyte/images/heal.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+			<repair-skill value="repair_skill"/>
+			<repaired-units>
+				<unit name="earth_serpent"/>
+			</repaired-units>
 		</command>
 
 		<command>
