@@ -30,8 +30,21 @@
 		<image path="images/devil_machine.bmp"/>
 		<image-cancel path="../dark_elder/images/dark_magic_cancel.bmp"/>
 		<meeting-point value="false"/>
-		<selection-sounds enabled="false"/>
-		<command-sounds enabled="false"/>
+		<selection-sounds enabled="true">
+			<sound path="sounds/select1.wav"/>
+			<sound path="sounds/select2.wav"/>
+			<sound path="sounds/select3.wav"/>
+			<sound path="sounds/select4.wav"/>
+			<sound path="sounds/select5.wav"/>
+		</selection-sounds>
+		<command-sounds enabled="true">
+			<sound path="sounds/command1.wav"/>
+			<sound path="sounds/command2.wav"/>
+			<sound path="sounds/command3.wav"/>
+			<sound path="sounds/command4.wav"/>
+			<sound path="sounds/command5.wav"/>
+			<sound path="sounds/command6.wav"/>
+		</command-sounds>
 	</parameters>
 
 	<skills>
@@ -59,12 +72,16 @@
 
 		<skill>
 			<type value="attack"/>
-			<name value="attack_skill"/>		
+			<name value="attack_skill"/>
 			<ep-cost value="0"/>
 			<speed value="500"/>
-			<anim-speed value="60"/>
+			<anim-speed value="500"/>
 			<animation path="models/machine_attack.g3d"/>
-			<sound enabled="false"/>
+			<sound enabled="true" start-time="0.0">
+				<sound-file path="sounds/attack1.wav"/>
+				<sound-file path="sounds/attack2.wav"/>
+				<sound-file path="sounds/attack3.wav"/>
+			</sound>
 			<attack-strenght value="60"/>
 			<attack-var value="0"/>
 			<attack-range value="2"/>
