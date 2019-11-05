@@ -44,5 +44,5 @@
 		<unit name="earth_serpent" amount="1"/>
 	</starting-units>
 
-	<music value="true" path="music/the_dark_amulet.ogg"/>
+	<music value="true" path="music/whatfunk_halloween_low.ogg"/>
 </faction>
